@@ -1,0 +1,44 @@
+.title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-top: 2rem;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &Check {
+        flex: 0 0 10%;
+        max-width: 10%;
+        height: 2rem;
+    }
+    &Name {
+        flex: 0 0 70%;
+        max-width: 70%;
+        color: #383f50;
+        font-size: 1.8rem;
+
+        &.taskNameDone {
+            color: #b2b7bb;
+            text-decoration: line-through;
+        }
+    }
+    &Actions {
+        flex: 0 0 20%;
+        max-width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &Btn {
+        flex: 0 0 3.5rem;
+        max-width: 3.5rem;
+        font-size: 1.8rem;
+    }
+}
