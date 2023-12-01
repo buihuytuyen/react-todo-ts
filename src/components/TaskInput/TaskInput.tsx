@@ -22,10 +22,8 @@ const TaskInput = (props: TaskInputProps) => {
                 setName('');
             }
         } else if (name !== '') {
-            {
-                addTodo(name);
-                setName('');
-            }
+            addTodo(name);
+            setName('');
         }
     };
     const [name, setName] = useState<string>('');
